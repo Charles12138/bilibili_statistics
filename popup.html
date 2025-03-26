@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>B站数据统计</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    }
+    h1 {
+      color: #00a1d6;
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      color: #666;
+      width: 80px;
+    }
+    td {
+      color: #333;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>B站视频数据统计</h1>
+  <table>
+    <tr><th>标题</th><td id="title"></td></tr>
+    <tr><th>播放量</th><td id="views"></td></tr>
+    <tr><th>弹幕数</th><td id="danmaku"></td></tr>
+    <tr><th>点赞</th><td id="likes"></td></tr>
+    <tr><th>投币</th><td id="coins"></td></tr>
+    <tr><th>收藏</th><td id="favorites"></td></tr>
+    <tr><th>转发</th><td id="reposts"></td></tr>
+  </table>
+</body>
+</html> 
